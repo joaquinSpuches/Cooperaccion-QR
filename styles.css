@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'akzidenz-grotesk_bqcondensed';
+}
+@font-face {
+    font-family: 'Berthold Akzidenz Grotesk BE';
+    src: url('./fonts/AkzidenzGroteskBE-Regular.woff2') format('woff2'),
+        url('./fonts/AkzidenzGroteskBE-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_bqcondensed';
+    src: url('./fonts/akzidenzgrotesk-cond-webfont.woff2') format('woff2'),
+         url('./fonts/akzidenzgrotesk-cond-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+.off{ 
+    display:none
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #212427;
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+    background: #25418C;
+    text-align: center;
+    height: 100%;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+.flip-card {
+    background-color: transparent;
+    width: 40vh;
+    border-radius: 5px;
+    height: 70vh;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    background-color: #25418C;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .rotate {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #25418C;
+    color: #f1f1f1;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #f1f1f1;
+    color: #25418C;
+    transform: rotateY(180deg);
+  }
+
+form .title {
+    color: #f1f1f1;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label .fa-solid {
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-right: 10px;
+}
+#answer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #25418C;
+    border-bottom: solid 1px #25418C;
+    padding: 0 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+form label input::placeholder {
+    color: #25418C
+}
+
+
+form .link {
+    color: #f1f1f1;
+    margin-bottom: 15px;
+}
+
+form button {
+    color: #25418C;
+    border: none;
+    background: #f1f1f1;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 157px;
+    align-self: center;
+    border-radius: 5px;
+}
