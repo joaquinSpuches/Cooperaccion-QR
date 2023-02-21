@@ -4,6 +4,7 @@ const button = document.getElementById('button')
 const form = document.getElementById('form')
 const answer = document.getElementById('answer')
 const card = document.getElementById('card-inner')
+const input = document.getElementById('password')
 
 button.addEventListener('click', (e) => {
     e.preventDefault()
@@ -22,4 +23,9 @@ button.addEventListener('click', (e) => {
     }
 
     console.log(data)
+})
+input.addEventListener('keyup',(e)=>{
+    if(e.key === 'Enter'){
+        e.target.blur()
+    }
 })
