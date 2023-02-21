@@ -49,7 +49,7 @@ form {
     background-color: transparent;
     width: 40vh;
     border-radius: 5px;
-    height: 70vh;
+    height: 57vh;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -89,13 +89,16 @@ form {
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #f1f1f1;
-    color: #ffffff;
-    background-image: url('mision\ 1\ a.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: rotateY(180deg);
-  }
+      background-color: #f1f1f1;
+      color: #ffffff;
+      
+      
+      transform: rotateY(180deg);
+    }
+    .flip-card-back img{
+        width: 100%;
+        height: 100%;
+    }
 
 form .title {
     color: #f1f1f1;
@@ -113,13 +116,7 @@ form label .fa-solid {
     color: #f1f1f1;
     margin-right: 10px;
 }
-#answer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    justify-content: center;
-}
+
 
 form label input {
     outline: none;
