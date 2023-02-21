@@ -35,12 +35,12 @@ body {
 
 form {
     display: flex;
-
+    background-image: url('mision\ 1\ tapa.jpg');
     flex-direction: column;
-    background: #25418C;
+    background-size: cover;
     text-align: center;
     height: 100%;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 25px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
@@ -58,7 +58,7 @@ form {
   .flip-card-inner {
     position: relative;
     width: 100%;
-    background-color: #25418C;
+   
     height: 100%;
     border-radius: 5px;
     text-align: center;
@@ -77,20 +77,23 @@ form {
     border-radius: 5px;
     width: 100%;
     height: 100%;
+    
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #25418C;
     color: #f1f1f1;
   }
   
   /* Style the back side */
   .flip-card-back {
     background-color: #f1f1f1;
-    color: #25418C;
+    color: #ffffff;
+    background-image: url('mision\ 1\ a.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     transform: rotateY(180deg);
   }
 
@@ -121,15 +124,15 @@ form label .fa-solid {
 form label input {
     outline: none;
     border: none;
-    color: #25418C;
-    border-bottom: solid 1px #25418C;
+    color: #212427;
+    border-bottom: solid 1px #ffff;
     padding: 0 5px;
     font-size: 18px;
     border-radius: 5px;
 }
 
 form label input::placeholder {
-    color: #25418C
+    color: #212427
 }
 
 
@@ -139,9 +142,10 @@ form .link {
 }
 
 form button {
-    color: #25418C;
+    color: #ffff;
     border: none;
-    background: #f1f1f1;
+    background:transparent;
+    border: solid 1px #fff;
     padding: 10px 15px;
     cursor: pointer;
     font-size: 20px;
